@@ -72,7 +72,7 @@ export default function ContactPage() {
                     },
                   ].map((step) => (
                     <li key={step.n} className="flex items-start gap-4">
-                      <div className="w-8 h-8 rounded-full bg-[#DC3545] flex items-center justify-center text-white font-bold text-sm shrink-0">
+                      <div className="w-8 h-8 rounded-full bg-[#E31E24] flex items-center justify-center text-white font-bold text-sm shrink-0">
                         {step.n}
                       </div>
                       <div>
@@ -91,7 +91,7 @@ export default function ContactPage() {
                 <div className="mb-5">
                   <a
                     href="tel:8477785310"
-                    className="text-[#DC3545] font-bold text-3xl hover:text-red-400 transition-colors block"
+                    className="text-[#E31E24] font-bold text-3xl hover:text-red-400 transition-colors block"
                     aria-label="Call us at 847-778-5310"
                   >
                     (847) 778-5310

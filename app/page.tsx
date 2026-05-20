@@ -46,7 +46,7 @@ const binIcon = (
 const features = [
   {
     icon: (
-      <svg className="w-6 h-6 text-[#DC3545]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <svg className="w-6 h-6 text-[#E31E24]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
       </svg>
@@ -56,7 +56,7 @@ const features = [
   },
   {
     icon: (
-      <svg className="w-6 h-6 text-[#DC3545]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <svg className="w-6 h-6 text-[#E31E24]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
       </svg>
     ),
@@ -65,7 +65,7 @@ const features = [
   },
   {
     icon: (
-      <svg className="w-6 h-6 text-[#DC3545]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <svg className="w-6 h-6 text-[#E31E24]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
       </svg>
     ),
@@ -74,7 +74,7 @@ const features = [
   },
   {
     icon: (
-      <svg className="w-6 h-6 text-[#DC3545]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <svg className="w-6 h-6 text-[#E31E24]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
@@ -132,18 +132,18 @@ export default function HomePage() {
           }}
           aria-hidden="true"
         />
-        <div className="absolute top-0 left-0 right-0 h-1 bg-[#DC3545]" aria-hidden="true" />
+        <div className="absolute top-0 left-0 right-0 h-1 bg-[#E31E24]" aria-hidden="true" />
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 text-center pt-24 pb-16">
           <div className="animate-fade-in-up">
-            <span className="inline-flex items-center gap-2 bg-[#DC3545]/20 text-[#DC3545] text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-[#DC3545]/30">
+            <span className="inline-flex items-center gap-2 bg-[#E31E24]/20 text-[#E31E24] text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-[#E31E24]/30">
               Built by Titans. Trusted by the North Shore.
             </span>
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mt-4 animate-fade-in-up animate-delay-100">
             North Shore&apos;s Most Trusted
-            <span className="block text-[#DC3545]">Exterior Cleaning</span>
+            <span className="block text-[#E31E24]">Exterior Cleaning</span>
           </h1>
 
           <p className="mt-7 text-gray-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed animate-fade-in-up animate-delay-200">
@@ -153,7 +153,7 @@ export default function HomePage() {
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animate-delay-300">
             <Link
               href="/contact"
-              className="w-full sm:w-auto bg-[#DC3545] hover:bg-[#b02a37] text-white font-bold px-10 py-4 rounded-xl transition-colors text-lg shadow-lg"
+              className="w-full sm:w-auto bg-[#E31E24] hover:bg-[#c01920] text-white font-bold px-10 py-4 rounded-xl transition-colors text-lg shadow-lg"
             >
               Book a Free Estimate
             </Link>
@@ -220,7 +220,7 @@ export default function HomePage() {
               </p>
               <Link
                 href="/about"
-                className="inline-flex items-center mt-7 text-[#DC3545] font-semibold hover:text-[#b02a37] transition-colors gap-1"
+                className="inline-flex items-center mt-7 text-[#E31E24] font-semibold hover:text-[#c01920] transition-colors gap-1"
               >
                 Learn more about our team
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -268,7 +268,7 @@ export default function HomePage() {
               </div>
               <p className="mt-5 text-gray-500 text-sm">
                 Don&apos;t see your town?{" "}
-                <a href="tel:8477785310" className="text-[#DC3545] font-medium hover:underline">
+                <a href="tel:8477785310" className="text-[#E31E24] font-medium hover:underline">
                   Call us
                 </a>{" "}
                 — we may still serve you.
@@ -286,14 +286,14 @@ export default function HomePage() {
                 ].map((town) => (
                   <div
                     key={town}
-                    className="bg-white border border-[#1B9BD1]/20 rounded-xl px-3 py-3 text-center hover:border-[#1B9BD1] transition-colors"
+                    className="bg-white border border-[#47C5E8]/20 rounded-xl px-3 py-3 text-center hover:border-[#47C5E8] transition-colors"
                   >
                     <span className="text-sm font-medium text-[#1A1A1A]">{town}</span>
                   </div>
                 ))}
               </div>
               <div className="mt-5 pt-5 border-t border-gray-200 text-center">
-                <Link href="/contact" className="text-[#DC3545] font-semibold text-sm hover:underline">
+                <Link href="/contact" className="text-[#E31E24] font-semibold text-sm hover:underline">
                   Book a free estimate in your area →
                 </Link>
               </div>
@@ -347,7 +347,7 @@ export default function HomePage() {
           <div className="text-center mt-12">
             <Link
               href="/contact"
-              className="inline-flex items-center bg-[#DC3545] hover:bg-[#b02a37] text-white font-bold px-10 py-4 rounded-xl transition-colors text-lg"
+              className="inline-flex items-center bg-[#E31E24] hover:bg-[#c01920] text-white font-bold px-10 py-4 rounded-xl transition-colors text-lg"
             >
               Get These Results
             </Link>

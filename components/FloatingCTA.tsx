@@ -3,7 +3,7 @@ export default function FloatingCTA() {
     <div className="fixed bottom-6 right-6 z-40 md:hidden">
       <a
         href="tel:8477785310"
-        className="flex items-center gap-2 bg-[#DC3545] hover:bg-[#b02a37] text-white font-bold px-5 py-3.5 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95"
+        className="flex items-center gap-2 bg-[#E31E24] hover:bg-[#c01920] text-white font-bold px-5 py-3.5 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95"
         aria-label="Call Now at 847-778-5310"
       >
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

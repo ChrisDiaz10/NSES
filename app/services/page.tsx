@@ -118,12 +118,12 @@ export default function ServicesPage() {
               {/* Content */}
               <div className={i % 2 !== 0 ? "lg:col-start-2" : ""}>
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center text-[#DC3545]">
+                  <div className="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center text-[#E31E24]">
                     {service.icon}
                   </div>
                   <div>
                     <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A]">{service.title}</h2>
-                    <p className="text-[#1B9BD1] font-medium mt-1">{service.tagline}</p>
+                    <p className="text-[#47C5E8] font-medium mt-1">{service.tagline}</p>
                   </div>
                 </div>
 
@@ -136,13 +136,13 @@ export default function ServicesPage() {
                 <div className="mt-8 flex flex-col sm:flex-row gap-4">
                   <Link
                     href="/contact"
-                    className="bg-[#DC3545] hover:bg-[#b02a37] text-white font-bold px-8 py-4 rounded-xl transition-colors text-center"
+                    className="bg-[#E31E24] hover:bg-[#c01920] text-white font-bold px-8 py-4 rounded-xl transition-colors text-center"
                   >
                     Book a Free Estimate
                   </Link>
                   <Link
                     href={service.href}
-                    className="border-2 border-[#1B9BD1] text-[#1B9BD1] hover:bg-blue-50 font-semibold px-8 py-4 rounded-xl transition-colors text-center"
+                    className="border-2 border-[#47C5E8] text-[#47C5E8] hover:bg-blue-50 font-semibold px-8 py-4 rounded-xl transition-colors text-center"
                   >
                     Full Details →
                   </Link>
@@ -151,14 +151,14 @@ export default function ServicesPage() {
 
               {/* What's Included */}
               <div className={`bg-[#0A1628] rounded-2xl p-8 text-white ${i % 2 !== 0 ? "lg:col-start-1" : ""}`}>
-                <h3 className="font-bold text-lg mb-6 text-[#DC3545] uppercase tracking-wider text-sm">
+                <h3 className="font-bold text-lg mb-6 text-[#E31E24] uppercase tracking-wider text-sm">
                   What&apos;s Included
                 </h3>
                 <ul className="space-y-4">
                   {service.included.map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <svg
-                        className="w-5 h-5 text-[#DC3545] mt-0.5 shrink-0"
+                        className="w-5 h-5 text-[#E31E24] mt-0.5 shrink-0"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"

@@ -95,15 +95,15 @@ export default function ContactForm() {
   const inputClass = (field: keyof Errors) =>
     `w-full px-4 py-3 rounded-xl border text-[#1A1A1A] bg-white placeholder-gray-400 focus:outline-none focus:ring-2 transition-colors ${
       errors[field]
-        ? "border-[#DC3545] focus:ring-red-200"
-        : "border-gray-200 focus:ring-[#1B9BD1]/30 focus:border-[#1B9BD1]"
+        ? "border-[#E31E24] focus:ring-red-200"
+        : "border-gray-200 focus:ring-[#47C5E8]/30 focus:border-[#47C5E8]"
     }`;
 
   const selectClass = (field?: keyof Errors) =>
     `w-full px-4 py-3 rounded-xl border text-[#1A1A1A] bg-white focus:outline-none focus:ring-2 transition-colors ${
       field && errors[field]
-        ? "border-[#DC3545] focus:ring-red-200"
-        : "border-gray-200 focus:ring-[#1B9BD1]/30 focus:border-[#1B9BD1]"
+        ? "border-[#E31E24] focus:ring-red-200"
+        : "border-gray-200 focus:ring-[#47C5E8]/30 focus:border-[#47C5E8]"
     }`;
 
   return (
@@ -112,7 +112,7 @@ export default function ContactForm() {
         {/* Full Name */}
         <div>
           <label htmlFor="name" className="block text-sm font-semibold text-[#1A1A1A] mb-1.5">
-            Full Name <span className="text-[#DC3545]">*</span>
+            Full Name <span className="text-[#E31E24]">*</span>
           </label>
           <input
             id="name"
@@ -126,7 +126,7 @@ export default function ContactForm() {
             aria-describedby={errors.name ? "name-error" : undefined}
           />
           {errors.name && (
-            <p id="name-error" role="alert" className="mt-1.5 text-[#DC3545] text-xs font-medium">
+            <p id="name-error" role="alert" className="mt-1.5 text-[#E31E24] text-xs font-medium">
               {errors.name}
             </p>
           )}
@@ -135,7 +135,7 @@ export default function ContactForm() {
         {/* Phone */}
         <div>
           <label htmlFor="phone" className="block text-sm font-semibold text-[#1A1A1A] mb-1.5">
-            Phone Number <span className="text-[#DC3545]">*</span>
+            Phone Number <span className="text-[#E31E24]">*</span>
           </label>
           <input
             id="phone"
@@ -149,7 +149,7 @@ export default function ContactForm() {
             aria-describedby={errors.phone ? "phone-error" : undefined}
           />
           {errors.phone && (
-            <p id="phone-error" role="alert" className="mt-1.5 text-[#DC3545] text-xs font-medium">
+            <p id="phone-error" role="alert" className="mt-1.5 text-[#E31E24] text-xs font-medium">
               {errors.phone}
             </p>
           )}
@@ -174,7 +174,7 @@ export default function ContactForm() {
         {/* Service */}
         <div>
           <label htmlFor="service" className="block text-sm font-semibold text-[#1A1A1A] mb-1.5">
-            Service Interested In <span className="text-[#DC3545]">*</span>
+            Service Interested In <span className="text-[#E31E24]">*</span>
           </label>
           <select
             id="service"
@@ -191,7 +191,7 @@ export default function ContactForm() {
             ))}
           </select>
           {errors.service && (
-            <p id="service-error" role="alert" className="mt-1.5 text-[#DC3545] text-xs font-medium">
+            <p id="service-error" role="alert" className="mt-1.5 text-[#E31E24] text-xs font-medium">
               {errors.service}
             </p>
           )}
@@ -200,7 +200,7 @@ export default function ContactForm() {
         {/* Address */}
         <div>
           <label htmlFor="address" className="block text-sm font-semibold text-[#1A1A1A] mb-1.5">
-            Property Address <span className="text-[#DC3545]">*</span>
+            Property Address <span className="text-[#E31E24]">*</span>
           </label>
           <input
             id="address"
@@ -214,7 +214,7 @@ export default function ContactForm() {
             aria-describedby={errors.address ? "address-error" : undefined}
           />
           {errors.address && (
-            <p id="address-error" role="alert" className="mt-1.5 text-[#DC3545] text-xs font-medium">
+            <p id="address-error" role="alert" className="mt-1.5 text-[#E31E24] text-xs font-medium">
               {errors.address}
             </p>
           )}
@@ -233,7 +233,7 @@ export default function ContactForm() {
                     value={type}
                     checked={form.propertyType === type}
                     onChange={handleChange}
-                    className="w-4 h-4 text-[#DC3545] accent-[#DC3545]"
+                    className="w-4 h-4 text-[#E31E24] accent-[#E31E24]"
                   />
                   <span className="text-sm text-[#1A1A1A] capitalize">{type}</span>
                 </label>
@@ -312,14 +312,14 @@ export default function ContactForm() {
             onChange={handleChange}
             rows={3}
             placeholder="Gate code, special instructions, which areas you want us to focus on..."
-            className="w-full px-4 py-3 rounded-xl border border-gray-200 text-[#1A1A1A] bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1B9BD1]/30 focus:border-[#1B9BD1] transition-colors resize-none"
+            className="w-full px-4 py-3 rounded-xl border border-gray-200 text-[#1A1A1A] bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#47C5E8]/30 focus:border-[#47C5E8] transition-colors resize-none"
           />
         </div>
 
         <button
           type="submit"
           disabled={submitting}
-          className="w-full bg-[#DC3545] hover:bg-[#b02a37] disabled:bg-gray-400 text-white font-bold py-4 rounded-xl transition-colors text-lg mt-2"
+          className="w-full bg-[#E31E24] hover:bg-[#c01920] disabled:bg-gray-400 text-white font-bold py-4 rounded-xl transition-colors text-lg mt-2"
         >
           {submitting ? "Submitting..." : "Book My Free Estimate"}
         </button>

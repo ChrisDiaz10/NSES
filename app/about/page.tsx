@@ -52,7 +52,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="bg-[#0A1628] py-24 pt-36">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <span className="inline-flex items-center gap-2 bg-[#DC3545]/20 text-[#DC3545] text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-[#DC3545]/30">
+          <span className="inline-flex items-center gap-2 bg-[#E31E24]/20 text-[#E31E24] text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-[#E31E24]/30">
             Glenbrook South · Glenview, IL
           </span>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-5">
@@ -97,7 +97,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value) => (
               <div key={value.name} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-                <div className="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center text-[#DC3545] mb-6">
+                <div className="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center text-[#E31E24] mb-6">
                   {value.icon}
                 </div>
                 <h3 className="text-xl font-bold text-[#1A1A1A] mb-3">{value.name}</h3>
@@ -131,7 +131,7 @@ export default function AboutPage() {
                   { label: "Community-Invested", detail: "This is our neighborhood. We take pride in the work because the work reflects on us here." },
                 ].map((item) => (
                   <li key={item.label} className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-[#DC3545] rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-8 h-8 bg-[#E31E24] rounded-lg flex items-center justify-center shrink-0 mt-0.5">
                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                       </svg>
@@ -146,7 +146,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-[#0A1628] rounded-2xl p-10 text-white">
-              <div className="w-12 h-1 bg-[#DC3545] mb-6" aria-hidden="true" />
+              <div className="w-12 h-1 bg-[#E31E24] mb-6" aria-hidden="true" />
               <blockquote className="text-2xl font-bold leading-snug mb-6">
                 &ldquo;When you hire us, you&apos;re not just getting a clean home — you&apos;re supporting kids from your own community who are building something from the ground up.&rdquo;
               </blockquote>

@@ -28,7 +28,7 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
           >
             <span className="font-semibold text-[#1A1A1A] pr-4">{item.question}</span>
             <svg
-              className={`w-5 h-5 text-[#DC3545] shrink-0 transition-transform duration-200 ${
+              className={`w-5 h-5 text-[#E31E24] shrink-0 transition-transform duration-200 ${
                 openIndex === i ? "rotate-180" : ""
               }`}
               fill="none"

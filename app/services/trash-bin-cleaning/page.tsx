@@ -103,14 +103,14 @@ export default function TrashBinCleaningPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
             Trash Bin Cleaning — Scheduled Around Your Pickup Day
           </h1>
-          <p className="text-[#1B9BD1] text-xl font-medium">Fresh bins every week. No effort on your end.</p>
+          <p className="text-[#47C5E8] text-xl font-medium">Fresh bins every week. No effort on your end.</p>
           <p className="mt-5 text-gray-300 text-lg max-w-2xl mx-auto">
             We handle the part of garbage day everyone dreads. You&apos;ll never have to think about it again.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="bg-[#DC3545] hover:bg-[#b02a37] text-white font-bold px-10 py-4 rounded-xl transition-colors"
+              className="bg-[#E31E24] hover:bg-[#c01920] text-white font-bold px-10 py-4 rounded-xl transition-colors"
             >
               Book a Free Estimate
             </Link>
@@ -138,7 +138,7 @@ export default function TrashBinCleaningPage() {
               </p>
               <Link
                 href="/contact"
-                className="bg-[#DC3545] hover:bg-[#b02a37] text-white font-bold px-8 py-4 rounded-xl transition-colors inline-flex"
+                className="bg-[#E31E24] hover:bg-[#c01920] text-white font-bold px-8 py-4 rounded-xl transition-colors inline-flex"
               >
                 Book a Free Estimate
               </Link>
@@ -148,7 +148,7 @@ export default function TrashBinCleaningPage() {
               <ul className="space-y-4">
                 {included.map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-[#DC3545] flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-6 h-6 rounded-full bg-[#E31E24] flex items-center justify-center shrink-0 mt-0.5">
                       <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
@@ -199,7 +199,7 @@ export default function TrashBinCleaningPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {process.map((p) => (
               <div key={p.step} className="bg-[#F8F9FA] rounded-2xl p-6 border border-gray-100">
-                <div className="w-12 h-12 rounded-xl bg-[#DC3545] flex items-center justify-center mb-5">
+                <div className="w-12 h-12 rounded-xl bg-[#E31E24] flex items-center justify-center mb-5">
                   <span className="text-white font-bold">{p.step}</span>
                 </div>
                 <h3 className="font-bold text-[#1A1A1A] mb-3">{p.title}</h3>
@@ -228,7 +228,7 @@ export default function TrashBinCleaningPage() {
                   "HOA members or landlords maintaining high standards on a property",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-gray-600">
-                    <svg className="w-5 h-5 text-[#1B9BD1] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <svg className="w-5 h-5 text-[#47C5E8] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
                     </svg>
                     {item}
@@ -270,9 +270,9 @@ export default function TrashBinCleaningPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <Link
               href="/services/window-washing"
-              className="flex items-center gap-5 border border-gray-200 bg-white rounded-xl p-6 hover:border-[#DC3545] hover:shadow-md transition-all group"
+              className="flex items-center gap-5 border border-gray-200 bg-white rounded-xl p-6 hover:border-[#E31E24] hover:shadow-md transition-all group"
             >
-              <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-[#DC3545] group-hover:bg-[#DC3545] group-hover:text-white transition-colors shrink-0">
+              <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-[#E31E24] group-hover:bg-[#E31E24] group-hover:text-white transition-colors shrink-0">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" strokeWidth="2" />
                   <line x1="3" y1="9" x2="21" y2="9" strokeWidth="2" />
@@ -286,9 +286,9 @@ export default function TrashBinCleaningPage() {
             </Link>
             <Link
               href="/services/pressure-washing"
-              className="flex items-center gap-5 border border-gray-200 bg-white rounded-xl p-6 hover:border-[#DC3545] hover:shadow-md transition-all group"
+              className="flex items-center gap-5 border border-gray-200 bg-white rounded-xl p-6 hover:border-[#E31E24] hover:shadow-md transition-all group"
             >
-              <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-[#DC3545] group-hover:bg-[#DC3545] group-hover:text-white transition-colors shrink-0">
+              <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-[#E31E24] group-hover:bg-[#E31E24] group-hover:text-white transition-colors shrink-0">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                 </svg>

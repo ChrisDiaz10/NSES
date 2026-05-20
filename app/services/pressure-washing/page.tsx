@@ -89,14 +89,14 @@ export default function PressureWashingPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
             Pressure Washing Services for North Shore Homes
           </h1>
-          <p className="text-[#1B9BD1] text-xl font-medium">Blast away years of grime in a single visit.</p>
+          <p className="text-[#47C5E8] text-xl font-medium">Blast away years of grime in a single visit.</p>
           <p className="mt-5 text-gray-300 text-lg max-w-2xl mx-auto">
             We restore your driveways, patios, siding, and more to looking clean and fresh — using the right technique for every surface.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="bg-[#DC3545] hover:bg-[#b02a37] text-white font-bold px-10 py-4 rounded-xl transition-colors"
+              className="bg-[#E31E24] hover:bg-[#c01920] text-white font-bold px-10 py-4 rounded-xl transition-colors"
             >
               Book a Free Estimate
             </Link>
@@ -124,7 +124,7 @@ export default function PressureWashingPage() {
               </p>
               <Link
                 href="/contact"
-                className="bg-[#DC3545] hover:bg-[#b02a37] text-white font-bold px-8 py-4 rounded-xl transition-colors inline-flex"
+                className="bg-[#E31E24] hover:bg-[#c01920] text-white font-bold px-8 py-4 rounded-xl transition-colors inline-flex"
               >
                 Book a Free Estimate
               </Link>
@@ -134,7 +134,7 @@ export default function PressureWashingPage() {
               <ul className="space-y-4">
                 {included.map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-[#DC3545] flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-6 h-6 rounded-full bg-[#E31E24] flex items-center justify-center shrink-0 mt-0.5">
                       <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
@@ -158,7 +158,7 @@ export default function PressureWashingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {process.map((p) => (
               <div key={p.step} className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-                <div className="w-12 h-12 rounded-xl bg-[#DC3545] flex items-center justify-center mb-5">
+                <div className="w-12 h-12 rounded-xl bg-[#E31E24] flex items-center justify-center mb-5">
                   <span className="text-white font-bold">{p.step}</span>
                 </div>
                 <h3 className="font-bold text-[#1A1A1A] mb-3">{p.title}</h3>
@@ -184,7 +184,7 @@ export default function PressureWashingPage() {
                   "Rental property owners maintaining their investment",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-gray-600">
-                    <svg className="w-5 h-5 text-[#1B9BD1] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <svg className="w-5 h-5 text-[#47C5E8] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
                     </svg>
                     {item}
@@ -226,9 +226,9 @@ export default function PressureWashingPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <Link
               href="/services/window-washing"
-              className="flex items-center gap-5 border border-gray-200 rounded-xl p-6 hover:border-[#DC3545] hover:shadow-md transition-all group"
+              className="flex items-center gap-5 border border-gray-200 rounded-xl p-6 hover:border-[#E31E24] hover:shadow-md transition-all group"
             >
-              <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-[#DC3545] group-hover:bg-[#DC3545] group-hover:text-white transition-colors shrink-0">
+              <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-[#E31E24] group-hover:bg-[#E31E24] group-hover:text-white transition-colors shrink-0">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" strokeWidth="2" />
                   <line x1="3" y1="9" x2="21" y2="9" strokeWidth="2" />
@@ -242,9 +242,9 @@ export default function PressureWashingPage() {
             </Link>
             <Link
               href="/services/trash-bin-cleaning"
-              className="flex items-center gap-5 border border-gray-200 rounded-xl p-6 hover:border-[#DC3545] hover:shadow-md transition-all group"
+              className="flex items-center gap-5 border border-gray-200 rounded-xl p-6 hover:border-[#E31E24] hover:shadow-md transition-all group"
             >
-              <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-[#DC3545] group-hover:bg-[#DC3545] group-hover:text-white transition-colors shrink-0">
+              <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-[#E31E24] group-hover:bg-[#E31E24] group-hover:text-white transition-colors shrink-0">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                 </svg>

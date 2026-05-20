@@ -3,8 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #1A1A1A;
-  --primary-red: #DC3545;
-  --primary-blue: #1B9BD1;
+  --primary-red: #E31E24;
+  --primary-blue: #47C5E8;
 }
 
 @theme inline {
@@ -26,7 +26,7 @@ html {
 
 /* Focus rings for accessibility */
 *:focus-visible {
-  outline: 2px solid #DC3545;
+  outline: 2px solid #E31E24;
   outline-offset: 2px;
 }
 

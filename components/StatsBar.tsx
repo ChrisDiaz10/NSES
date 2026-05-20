@@ -12,7 +12,7 @@ export default function StatsBar() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           {stats.map((stat) => (
             <div key={stat.label}>
-              <div className="text-[#DC3545] font-bold text-3xl md:text-4xl mb-2">{stat.value}</div>
+              <div className="text-[#E31E24] font-bold text-3xl md:text-4xl mb-2">{stat.value}</div>
               <div className="text-gray-300 text-sm">{stat.label}</div>
             </div>
           ))}

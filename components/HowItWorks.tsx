@@ -50,7 +50,7 @@ export default function HowItWorks() {
               )}
 
               <div className="flex flex-col items-center text-center md:items-start md:text-left lg:items-center lg:text-center">
-                <div className="w-14 h-14 rounded-full bg-[#DC3545] flex items-center justify-center mb-5 z-10">
+                <div className="w-14 h-14 rounded-full bg-[#E31E24] flex items-center justify-center mb-5 z-10">
                   <span className="text-white font-bold text-lg">{step.number}</span>
                 </div>
                 <h3 className="font-bold text-lg text-[#1A1A1A] mb-2">{step.title}</h3>

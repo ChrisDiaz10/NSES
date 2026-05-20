@@ -15,7 +15,7 @@ export default function CTABanner({
 }: CTABannerProps) {
   return (
     <section
-      className="relative bg-[#DC3545] text-white py-20 overflow-hidden"
+      className="relative bg-[#E31E24] text-white py-20 overflow-hidden"
       style={{ clipPath: "polygon(0 6%, 100% 0%, 100% 100%, 0% 100%)" }}
     >
       {/* Background pattern */}
@@ -42,7 +42,7 @@ export default function CTABanner({
         <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
           <Link
             href={primaryHref}
-            className="bg-white text-[#DC3545] hover:bg-gray-100 font-bold px-10 py-4 rounded-xl transition-colors text-lg shadow-lg"
+            className="bg-white text-[#E31E24] hover:bg-gray-100 font-bold px-10 py-4 rounded-xl transition-colors text-lg shadow-lg"
           >
             {primaryLabel}
           </Link>

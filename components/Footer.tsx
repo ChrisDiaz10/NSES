@@ -8,7 +8,7 @@ const serviceAreaTowns = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1A1A1A] text-white border-t-4 border-[#DC3545]">
+    <footer className="bg-[#1A1A1A] text-white border-t-4 border-[#E31E24]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Col 1: Logo + tagline */}
@@ -18,7 +18,7 @@ export default function Footer() {
               alt="North Shore Exterior Services"
               width={160}
               height={48}
-              className="h-10 w-auto mb-4 brightness-0 invert"
+              className="h-12 w-auto mb-4"
             />
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               Built by Titans. Trusted by the North Shore.
@@ -80,7 +80,7 @@ export default function Footer() {
             </div>
             <p className="text-gray-500 text-xs mt-4">
               Don&apos;t see your town?{" "}
-              <a href="tel:8477785310" className="text-[#DC3545] hover:underline">
+              <a href="tel:8477785310" className="text-[#E31E24] hover:underline">
                 Call us
               </a>{" "}
               — we may still serve you.
@@ -94,7 +94,7 @@ export default function Footer() {
               <div>
                 <a
                   href="tel:8477785310"
-                  className="text-[#DC3545] font-bold text-xl hover:text-red-400 transition-colors"
+                  className="text-[#E31E24] font-bold text-xl hover:text-red-400 transition-colors"
                   aria-label="Call us at 847-778-5310"
                 >
                   (847) 778-5310
@@ -111,7 +111,7 @@ export default function Footer() {
               </div>
               <Link
                 href="/contact"
-                className="inline-flex items-center bg-[#DC3545] hover:bg-[#b02a37] text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors mt-2"
+                className="inline-flex items-center bg-[#E31E24] hover:bg-[#c01920] text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors mt-2"
               >
                 Book a Free Estimate
               </Link>

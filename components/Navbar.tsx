@@ -69,7 +69,7 @@ export default function Navbar() {
                     <button
                       className={`flex items-center gap-1 font-medium text-sm transition-colors ${
                         scrolled ? "text-[#1A1A1A]" : "text-white"
-                      } ${pathname.startsWith("/services") ? "text-[#DC3545]" : "hover:text-[#DC3545]"}`}
+                      } ${pathname.startsWith("/services") ? "text-[#E31E24]" : "hover:text-[#E31E24]"}`}
                       aria-expanded={servicesOpen}
                       aria-haspopup="true"
                     >
@@ -88,7 +88,7 @@ export default function Navbar() {
                       <div className="absolute top-full left-0 mt-1 w-52 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
                         <Link
                           href="/services"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#DC3545] font-medium"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#E31E24] font-medium"
                         >
                           All Services
                         </Link>
@@ -97,8 +97,8 @@ export default function Navbar() {
                           <Link
                             key={s.href}
                             href={s.href}
-                            className={`block px-4 py-2 text-sm hover:bg-gray-50 hover:text-[#DC3545] ${
-                              pathname === s.href ? "text-[#DC3545] font-medium" : "text-gray-700"
+                            className={`block px-4 py-2 text-sm hover:bg-gray-50 hover:text-[#E31E24] ${
+                              pathname === s.href ? "text-[#E31E24] font-medium" : "text-gray-700"
                             }`}
                           >
                             {s.name}
@@ -113,7 +113,7 @@ export default function Navbar() {
                     href={link.href}
                     className={`font-medium text-sm transition-colors ${
                       scrolled ? "text-[#1A1A1A]" : "text-white"
-                    } ${pathname === link.href ? "text-[#DC3545]" : "hover:text-[#DC3545]"}`}
+                    } ${pathname === link.href ? "text-[#E31E24]" : "hover:text-[#E31E24]"}`}
                   >
                     {link.name}
                   </Link>
@@ -122,7 +122,7 @@ export default function Navbar() {
 
               <a
                 href="tel:8477785310"
-                className="ml-4 bg-[#DC3545] hover:bg-[#b02a37] text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors"
+                className="ml-4 bg-[#E31E24] hover:bg-[#c01920] text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors"
                 aria-label="Call North Shore Exterior Services at 847-778-5310"
               >
                 (847) 778-5310
@@ -178,7 +178,7 @@ export default function Navbar() {
               <Link
                 href="/"
                 className={`block px-4 py-3 rounded-lg font-medium transition-colors ${
-                  pathname === "/" ? "bg-red-50 text-[#DC3545]" : "text-gray-800 hover:bg-gray-50"
+                  pathname === "/" ? "bg-red-50 text-[#E31E24]" : "text-gray-800 hover:bg-gray-50"
                 }`}
               >
                 Home
@@ -188,7 +188,7 @@ export default function Navbar() {
                 <Link
                   href="/services"
                   className={`block px-4 py-3 rounded-lg font-medium transition-colors ${
-                    pathname === "/services" ? "bg-red-50 text-[#DC3545]" : "text-gray-800 hover:bg-gray-50"
+                    pathname === "/services" ? "bg-red-50 text-[#E31E24]" : "text-gray-800 hover:bg-gray-50"
                   }`}
                 >
                   Services
@@ -199,7 +199,7 @@ export default function Navbar() {
                       key={s.href}
                       href={s.href}
                       className={`block px-4 py-2.5 rounded-lg text-sm transition-colors ${
-                        pathname === s.href ? "bg-red-50 text-[#DC3545]" : "text-gray-600 hover:bg-gray-50"
+                        pathname === s.href ? "bg-red-50 text-[#E31E24]" : "text-gray-600 hover:bg-gray-50"
                       }`}
                     >
                       {s.name}
@@ -211,7 +211,7 @@ export default function Navbar() {
               <Link
                 href="/about"
                 className={`block px-4 py-3 rounded-lg font-medium transition-colors ${
-                  pathname === "/about" ? "bg-red-50 text-[#DC3545]" : "text-gray-800 hover:bg-gray-50"
+                  pathname === "/about" ? "bg-red-50 text-[#E31E24]" : "text-gray-800 hover:bg-gray-50"
                 }`}
               >
                 About
@@ -219,7 +219,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 className={`block px-4 py-3 rounded-lg font-medium transition-colors ${
-                  pathname === "/contact" ? "bg-red-50 text-[#DC3545]" : "text-gray-800 hover:bg-gray-50"
+                  pathname === "/contact" ? "bg-red-50 text-[#E31E24]" : "text-gray-800 hover:bg-gray-50"
                 }`}
               >
                 Contact
@@ -229,7 +229,7 @@ export default function Navbar() {
             <div className="p-5 border-t border-gray-100 space-y-3">
               <a
                 href="tel:8477785310"
-                className="flex items-center justify-center gap-2 w-full bg-[#DC3545] hover:bg-[#b02a37] text-white font-bold py-4 rounded-xl transition-colors text-lg"
+                className="flex items-center justify-center gap-2 w-full bg-[#E31E24] hover:bg-[#c01920] text-white font-bold py-4 rounded-xl transition-colors text-lg"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -238,7 +238,7 @@ export default function Navbar() {
               </a>
               <Link
                 href="/contact"
-                className="flex items-center justify-center w-full border-2 border-[#DC3545] text-[#DC3545] font-semibold py-3.5 rounded-xl hover:bg-red-50 transition-colors"
+                className="flex items-center justify-center w-full border-2 border-[#E31E24] text-[#E31E24] font-semibold py-3.5 rounded-xl hover:bg-red-50 transition-colors"
               >
                 Book a Free Estimate
               </Link>

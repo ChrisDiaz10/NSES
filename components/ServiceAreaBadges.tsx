@@ -16,7 +16,7 @@ export default function ServiceAreaBadges({ variant = "light" }: ServiceAreaBadg
           className={`text-sm font-medium px-3 py-1.5 rounded-full border transition-colors ${
             variant === "dark"
               ? "bg-white/10 text-gray-300 border-white/20"
-              : "bg-white text-[#1B9BD1] border-[#1B9BD1]/30 hover:border-[#1B9BD1]"
+              : "bg-white text-[#47C5E8] border-[#47C5E8]/30 hover:border-[#47C5E8]"
           }`}
         >
           {town}

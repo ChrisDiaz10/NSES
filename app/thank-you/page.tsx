@@ -52,7 +52,7 @@ export default function ThankYouPage() {
           <p className="text-gray-600 text-sm mb-3">Need it faster?</p>
           <a
             href="tel:8477785310"
-            className="text-[#DC3545] font-bold text-2xl hover:text-[#b02a37] transition-colors block mb-1"
+            className="text-[#E31E24] font-bold text-2xl hover:text-[#c01920] transition-colors block mb-1"
             aria-label="Call us at 847-778-5310"
           >
             (847) 778-5310

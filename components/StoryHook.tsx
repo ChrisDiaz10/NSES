@@ -4,13 +4,13 @@ export default function StoryHook() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           {/* Left: Pullquote */}
-          <div className="border-l-4 border-[#DC3545] pl-8">
+          <div className="border-l-4 border-[#E31E24] pl-8">
             <p className="text-2xl md:text-3xl font-bold text-[#1A1A1A] leading-tight">
               &ldquo;We built this on the same principles we learned on the football field — show up, work hard, and never cut corners.&rdquo;
             </p>
             <div className="mt-6 flex items-center gap-3">
-              <div className="w-10 h-px bg-[#DC3545]" aria-hidden="true" />
-              <p className="text-[#DC3545] font-semibold text-sm">North Shore Exterior Services</p>
+              <div className="w-10 h-px bg-[#E31E24]" aria-hidden="true" />
+              <p className="text-[#E31E24] font-semibold text-sm">North Shore Exterior Services</p>
             </div>
           </div>
 
@@ -25,7 +25,7 @@ export default function StoryHook() {
             <div className="mt-8">
               <a
                 href="/about"
-                className="inline-flex items-center text-[#1B9BD1] font-semibold hover:text-[#1577a8] transition-colors gap-1"
+                className="inline-flex items-center text-[#47C5E8] font-semibold hover:text-[#2ba8cb] transition-colors gap-1"
               >
                 Our full story
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
