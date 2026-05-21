@@ -1,63 +1,56 @@
-interface Step {
-  number: string;
-  title: string;
-  description: string;
-}
+import AnimatedSection from "./AnimatedSection";
 
-const steps: Step[] = [
+const steps = [
   {
     number: "01",
     title: "Book Your Free Estimate",
-    description: "Fill out our quick form online or give us a call. We'll get back to you within 2 hours during business hours to schedule a time.",
+    description: "Fill out our quick form or send us an email. No commitment, no obligation — just let us know what you need.",
   },
   {
     number: "02",
     title: "We Come to You",
-    description: "We visit your property, take a careful look at the job, and give you an exact price on the spot — no guesswork, no hidden fees.",
+    description: "I come to your property, walk through what needs to be done, and give you an exact price on the spot.",
   },
   {
     number: "03",
     title: "You Decide",
-    description: "Zero pressure, zero obligation. You take the estimate and make the call. If you're ready to go, we can often start the same week.",
+    description: "Zero pressure, zero obligation, zero surprises. You know the exact cost before we do anything.",
   },
   {
     number: "04",
     title: "We Get to Work",
-    description: "We show up on time, do the job right, and leave your property spotless. We don't leave until you're satisfied.",
+    description: "On time, fully equipped, and focused on one thing: spotless results that speak for themselves.",
   },
 ];
 
 export default function HowItWorks() {
   return (
-    <section className="py-20 bg-[#F8F9FA]">
+    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1A1A1A]">Getting Started Is Simple</h2>
-          <p className="mt-4 text-gray-600 text-lg max-w-xl mx-auto">
-            Four easy steps from first contact to a spotless property.
+        <AnimatedSection className="text-center mb-16">
+          <h2 className="text-display-sm text-[#0A1628] mb-4">Getting Started Is Simple</h2>
+          <p className="text-gray-500 text-lg max-w-xl mx-auto">
+            Four steps from first contact to spotless results.
           </p>
-        </div>
+        </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {steps.map((step, i) => (
-            <div key={i} className="relative">
-              {/* Connector line (desktop) */}
-              {i < steps.length - 1 && (
-                <div
-                  className="hidden lg:block absolute top-7 left-[calc(50%+2rem)] right-0 h-px bg-gray-300"
-                  aria-hidden="true"
-                />
-              )}
+        <div className="relative">
+          {/* Connecting line on desktop */}
+          <div className="hidden lg:block absolute top-10 left-[12.5%] right-[12.5%] h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" aria-hidden="true" />
 
-              <div className="flex flex-col items-center text-center md:items-start md:text-left lg:items-center lg:text-center">
-                <div className="w-14 h-14 rounded-full bg-[#E31E24] flex items-center justify-center mb-5 z-10">
-                  <span className="text-white font-bold text-lg">{step.number}</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+            {steps.map((step, i) => (
+              <AnimatedSection key={step.number} delay={i * 0.1} className="relative text-center lg:text-left">
+                <div className="flex flex-col items-center lg:items-start">
+                  <div className="w-20 h-20 rounded-2xl bg-[#DC3545] flex items-center justify-center mb-6 shadow-lg shadow-red-200 relative z-10">
+                    <span className="text-white font-black text-2xl">{step.number}</span>
+                  </div>
+                  <h3 className="font-bold text-[#0A1628] text-lg mb-3">{step.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{step.description}</p>
                 </div>
-                <h3 className="font-bold text-lg text-[#1A1A1A] mb-2">{step.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{step.description}</p>
-              </div>
-            </div>
-          ))}
+              </AnimatedSection>
+            ))}
+          </div>
         </div>
       </div>
     </section>

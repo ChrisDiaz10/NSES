@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface FAQItem {
   question: string;
@@ -16,36 +17,50 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
 
   return (
     <div className="space-y-3">
-      {items.map((item, i) => (
-        <div
-          key={i}
-          className="border border-gray-200 rounded-xl overflow-hidden"
-        >
-          <button
-            onClick={() => setOpenIndex(openIndex === i ? null : i)}
-            className="w-full flex items-center justify-between px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors"
-            aria-expanded={openIndex === i}
+      {items.map((item, index) => {
+        const isOpen = openIndex === index;
+        return (
+          <div
+            key={index}
+            className={`border rounded-xl overflow-hidden transition-colors duration-200 ${
+              isOpen ? "border-[#DC3545]/30 bg-red-50/30" : "border-gray-200 bg-white"
+            }`}
           >
-            <span className="font-semibold text-[#1A1A1A] pr-4">{item.question}</span>
-            <svg
-              className={`w-5 h-5 text-[#E31E24] shrink-0 transition-transform duration-200 ${
-                openIndex === i ? "rotate-180" : ""
-              }`}
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
+            <button
+              className="flex items-center justify-between w-full px-6 py-5 text-left"
+              onClick={() => setOpenIndex(isOpen ? null : index)}
+              aria-expanded={isOpen}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          {openIndex === i && (
-            <div className="px-6 pb-5 bg-white">
-              <p className="text-gray-600 text-sm leading-relaxed">{item.answer}</p>
-            </div>
-          )}
-        </div>
-      ))}
+              <span className="font-semibold text-[#0A1628] pr-4 text-sm leading-snug">{item.question}</span>
+              <motion.span
+                animate={{ rotate: isOpen ? 180 : 0 }}
+                transition={{ duration: 0.2 }}
+                className="shrink-0 text-gray-400"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </motion.span>
+            </button>
+
+            <AnimatePresence initial={false}>
+              {isOpen && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.25, ease: "easeInOut" }}
+                  className="overflow-hidden"
+                >
+                  <p className="px-6 pb-5 text-gray-600 text-sm leading-relaxed">
+                    {item.answer}
+                  </p>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        );
+      })}
     </div>
   );
 }
