@@ -46,7 +46,7 @@ export default function HowItWorks() {
                     <span className="text-white font-black text-2xl">{step.number}</span>
                   </div>
                   <h3 className="font-bold text-[#0A1628] text-lg mb-3">{step.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{step.description}</p>
+                  <p className="text-gray-700 text-sm leading-relaxed">{step.description}</p>
                 </div>
               </AnimatedSection>
             ))}

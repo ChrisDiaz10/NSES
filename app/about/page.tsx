@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import CTABanner from "@/components/CTABanner";
 import StatsBar from "@/components/StatsBar";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -40,18 +41,22 @@ export default function AboutPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Photo Placeholder */}
+            {/* Photos */}
             <AnimatedSection>
-              <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-gradient-to-br from-[#0A1628] via-[#0d2040] to-[#1a3a5c] flex items-end shadow-2xl">
-                <div className="absolute inset-0 dot-grid opacity-30" />
-                <div className="relative z-10 p-8 text-white">
-                  <div className="w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mb-4">
-                    <svg className="w-8 h-8 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="relative rounded-2xl overflow-hidden aspect-[3/4] shadow-2xl col-span-2">
+                  <Image
+                    src="/christopher-portrait.jpg"
+                    alt="Christopher Diaz, founder of North Shore Spotless, kneeling on the Glenbrook South football field"
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-0 left-0 p-6 text-white">
+                    <p className="font-bold text-sm">Christopher Diaz</p>
+                    <p className="text-white/70 text-xs">Founder · GBS &apos;26 · Titans Football #10</p>
                   </div>
-                  <p className="text-white/80 text-sm font-medium">Christopher Diaz</p>
-                  <p className="text-white/50 text-xs">Founder, North Shore Spotless · GBS &apos;26</p>
                 </div>
               </div>
             </AnimatedSection>

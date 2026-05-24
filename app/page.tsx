@@ -12,6 +12,7 @@ import CTABanner from "@/components/CTABanner";
 import TrustBadges from "@/components/TrustBadges";
 import ServiceAreaBadges from "@/components/ServiceAreaBadges";
 import AnimatedSection from "@/components/AnimatedSection";
+import FAQAccordion from "@/components/FAQAccordion";
 
 const stagger: Variants = {
   initial: {},
@@ -118,7 +119,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/services"
-                className="border-2 border-white/40 hover:border-white text-white font-semibold px-10 py-4 rounded-xl transition-all hover:bg-white/10 text-lg"
+                className="bg-white hover:bg-gray-100 text-[#0A1628] font-bold px-10 py-4 rounded-xl transition-all hover:scale-105 text-lg shadow-sm"
               >
                 See Our Services
               </Link>
@@ -205,7 +206,7 @@ export default function HomePage() {
                 },
                 {
                   title: "Satisfaction Guaranteed",
-                  desc: "I don't leave until it's spotless. Period.",
+                  desc: "Not happy with the results? I'll re-clean the job at no charge — no questions asked.",
                   icon: "M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z",
                 },
               ].map((feature, i) => (
@@ -301,6 +302,38 @@ export default function HomePage() {
               Get These Results
             </Link>
           </AnimatedSection>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-[#F8F9FA]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <AnimatedSection className="text-center mb-12">
+            <p className="text-[#DC3545] font-semibold text-sm uppercase tracking-widest mb-3">Common Questions</p>
+            <h2 className="text-display-sm text-[#0A1628]">Frequently Asked Questions</h2>
+          </AnimatedSection>
+          <FAQAccordion items={[
+            {
+              question: "How long does a window wash take?",
+              answer: "Most homes take 2–4 hours depending on the number of windows and whether you need interior cleaning too. I give you a time estimate at your free on-site assessment so there are no surprises.",
+            },
+            {
+              question: "Do you use eco-friendly products?",
+              answer: "Yes. I use biodegradable, eco-friendly cleaning solutions that are safe for kids, pets, and your landscaping. No harsh chemicals left behind.",
+            },
+            {
+              question: "What if I'm not satisfied with the results?",
+              answer: "If you're not 100% happy, I'll come back and re-clean the job at no charge — no questions asked. That's what the guarantee means.",
+            },
+            {
+              question: "What's your service area?",
+              answer: "I serve Glenview, Northbrook, Wilmette, Winnetka, Evanston, Deerfield, Highland Park, Lake Forest, Glencoe, Libertyville, and Vernon Hills. Not sure if I reach you? Email northshorespotless@gmail.com and I'll let you know.",
+            },
+            {
+              question: "Can I book recurring service?",
+              answer: "Absolutely. Many customers do seasonal packages (spring + fall) for window washing, or monthly and bi-monthly plans for trash bin cleaning. Just mention it at your estimate and I'll set it up.",
+            },
+          ]} />
         </div>
       </section>
 
