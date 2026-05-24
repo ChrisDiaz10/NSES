@@ -35,6 +35,7 @@ export default function TwoStepForm() {
   const [step, setStep] = useState<1 | 2>(1);
   const [direction, setDirection] = useState<1 | -1>(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const [step1, setStep1] = useState<Step1Data>({ name: "", email: "", service: "" });
   const [step2, setStep2] = useState<Step2Data>({
@@ -77,11 +78,38 @@ export default function TwoStepForm() {
     const errs = validateStep2();
     if (Object.keys(errs).length > 0) { setErrors(errs); return; }
     setIsSubmitting(true);
-    if (typeof window !== "undefined") {
-      sessionStorage.setItem("submittedName", step1.name.split(" ")[0]);
+    setSubmitError("");
+
+    try {
+      const res = await fetch("https://formspree.io/f/xgoqlkka", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: step1.name,
+          email: step1.email,
+          service: step1.service,
+          address: step2.address,
+          "property type": step2.propertyType,
+          "preferred day": step2.preferredDay || "No preference",
+          "preferred time": step2.preferredTime || "No preference",
+          "how they heard": step2.howHeard || "Not specified",
+          notes: step2.notes || "None",
+        }),
+      });
+
+      if (res.ok) {
+        if (typeof window !== "undefined") {
+          sessionStorage.setItem("submittedName", step1.name.split(" ")[0]);
+        }
+        router.push("/thank-you");
+      } else {
+        setSubmitError("Something went wrong. Please try again or email northshorespotless@gmail.com directly.");
+        setIsSubmitting(false);
+      }
+    } catch {
+      setSubmitError("Network error. Please check your connection and try again.");
+      setIsSubmitting(false);
     }
-    await new Promise((r) => setTimeout(r, 600));
-    router.push("/thank-you");
   };
 
   const variants = {
@@ -329,6 +357,9 @@ export default function TwoStepForm() {
                       )}
                     </button>
                   </div>
+                  {submitError && (
+                    <p className="text-sm text-[#DC3545] text-center mt-3">{submitError}</p>
+                  )}
                 </div>
               </motion.div>
             )}
