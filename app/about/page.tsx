@@ -55,7 +55,7 @@ export default function AboutPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 p-6 text-white">
                     <p className="font-bold text-sm">Christopher Diaz</p>
-                    <p className="text-white/70 text-xs">Founder · GBS &apos;26 · Titans Football #10</p>
+                    <p className="text-white/70 text-xs">Founder · GBS &apos;28 · Titans Football #10</p>
                   </div>
                 </div>
               </div>
