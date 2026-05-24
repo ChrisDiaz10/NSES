@@ -43,19 +43,20 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100"
+            ? "bg-[#0A1628]/95 backdrop-blur-md shadow-lg shadow-black/20 border-b border-white/10"
             : "bg-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-3">
+
             <Link href="/" className="flex items-center shrink-0" aria-label="North Shore Spotless home">
               <Image
-                src="/logo-horizontal.png"
+                src="/logo-horizontal.svg"
                 alt="North Shore Spotless"
-                width={200}
-                height={48}
-                className="h-10 w-auto"
+                width={210}
+                height={56}
+                className="h-11 w-auto"
                 priority
               />
             </Link>
@@ -67,8 +68,8 @@ export default function Navbar() {
                   href={href}
                   className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                     isActive(href)
-                      ? scrolled ? "text-[#DC3545]" : "text-white"
-                      : scrolled ? "text-gray-700 hover:text-[#0A1628]" : "text-white/80 hover:text-white"
+                      ? "text-white"
+                      : "text-white/75 hover:text-white"
                   }`}
                 >
                   {label}
@@ -86,8 +87,8 @@ export default function Navbar() {
                 <button
                   className={`relative flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                     isActive("/services")
-                      ? scrolled ? "text-[#DC3545]" : "text-white"
-                      : scrolled ? "text-gray-700 hover:text-[#0A1628]" : "text-white/80 hover:text-white"
+                      ? "text-white"
+                      : "text-white/75 hover:text-white"
                   }`}
                   aria-expanded={servicesOpen}
                   aria-haspopup="true"
@@ -102,13 +103,13 @@ export default function Navbar() {
                 </button>
 
                 {servicesOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 overflow-hidden">
-                    <Link href="/services" className="block px-4 py-2.5 text-sm text-gray-500 hover:text-[#0A1628] hover:bg-gray-50 font-medium transition-colors">
+                  <div className="absolute top-full left-0 mt-2 w-52 bg-[#0D1F3C] rounded-xl shadow-xl border border-white/10 py-2 overflow-hidden">
+                    <Link href="/services" className="block px-4 py-2.5 text-sm text-white/50 hover:text-white hover:bg-white/5 font-medium transition-colors">
                       All Services
                     </Link>
-                    <div className="h-px bg-gray-100 my-1" />
+                    <div className="h-px bg-white/10 my-1" />
                     {services.map((s) => (
-                      <Link key={s.href} href={s.href} className="block px-4 py-2.5 text-sm text-gray-600 hover:text-[#0A1628] hover:bg-gray-50 transition-colors">
+                      <Link key={s.href} href={s.href} className="block px-4 py-2.5 text-sm text-white/75 hover:text-white hover:bg-white/5 transition-colors">
                         {s.name}
                       </Link>
                     ))}
@@ -120,7 +121,7 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center gap-4">
               <a
                 href="mailto:northshorespotless@gmail.com"
-                className={`text-xs transition-colors ${scrolled ? "text-gray-500 hover:text-[#0A1628]" : "text-white/60 hover:text-white"}`}
+                className="text-xs text-white/50 hover:text-white transition-colors"
               >
                 northshorespotless@gmail.com
               </a>
@@ -133,7 +134,7 @@ export default function Navbar() {
             </div>
 
             <button
-              className={`lg:hidden p-2 rounded-lg transition-colors ${scrolled ? "text-[#0A1628] hover:bg-gray-100" : "text-white hover:bg-white/10"}`}
+              className="lg:hidden p-2 rounded-lg text-white hover:bg-white/10 transition-colors"
               onClick={() => setMobileOpen(true)}
               aria-label="Open navigation menu"
             >
@@ -147,11 +148,11 @@ export default function Navbar() {
 
       {mobileOpen && (
         <div className="fixed inset-0 z-[60] lg:hidden">
-          <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setMobileOpen(false)} />
-          <div className="absolute top-0 right-0 bottom-0 w-80 max-w-[90vw] bg-white shadow-2xl flex flex-col">
-            <div className="flex items-center justify-between p-5 border-b border-gray-100">
-              <Image src="/logo-horizontal.png" alt="North Shore Spotless" width={160} height={40} className="h-8 w-auto" />
-              <button onClick={() => setMobileOpen(false)} className="p-2 rounded-lg text-gray-500 hover:bg-gray-100 transition-colors" aria-label="Close navigation menu">
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setMobileOpen(false)} />
+          <div className="absolute top-0 right-0 bottom-0 w-80 max-w-[90vw] bg-[#0A1628] shadow-2xl flex flex-col">
+            <div className="flex items-center justify-between p-5 border-b border-white/10">
+              <Image src="/logo-horizontal.svg" alt="North Shore Spotless" width={170} height={44} className="h-9 w-auto" />
+              <button onClick={() => setMobileOpen(false)} className="p-2 rounded-lg text-white/60 hover:text-white hover:bg-white/10 transition-colors" aria-label="Close navigation menu">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
@@ -159,33 +160,33 @@ export default function Navbar() {
             </div>
 
             <nav className="flex-1 overflow-y-auto p-5 space-y-1" aria-label="Mobile navigation">
-              <Link href="/" className={`flex items-center px-4 py-3 rounded-xl font-medium transition-colors ${isActive("/") ? "bg-red-50 text-[#DC3545]" : "text-gray-700 hover:bg-gray-50"}`}>
+              <Link href="/" className={`flex items-center px-4 py-3 rounded-xl font-medium transition-colors ${isActive("/") ? "bg-white/10 text-white" : "text-white/75 hover:bg-white/5 hover:text-white"}`}>
                 Home
               </Link>
               <div className="pt-2">
-                <p className="px-4 pb-1 text-xs font-semibold uppercase tracking-wider text-gray-400">Services</p>
-                <Link href="/services" className="flex items-center px-4 py-2.5 rounded-xl text-sm text-gray-500 hover:bg-gray-50 transition-colors">
+                <p className="px-4 pb-1 text-xs font-semibold uppercase tracking-wider text-white/30">Services</p>
+                <Link href="/services" className="flex items-center px-4 py-2.5 rounded-xl text-sm text-white/50 hover:bg-white/5 hover:text-white transition-colors">
                   All Services
                 </Link>
                 {services.map((s) => (
-                  <Link key={s.href} href={s.href} className={`flex items-center px-4 py-2.5 rounded-xl text-sm transition-colors ${isActive(s.href) ? "bg-red-50 text-[#DC3545]" : "text-gray-600 hover:bg-gray-50"}`}>
+                  <Link key={s.href} href={s.href} className={`flex items-center px-4 py-2.5 rounded-xl text-sm transition-colors ${isActive(s.href) ? "bg-white/10 text-white" : "text-white/75 hover:bg-white/5 hover:text-white"}`}>
                     {s.name}
                   </Link>
                 ))}
               </div>
-              <Link href="/about" className={`flex items-center px-4 py-3 rounded-xl font-medium transition-colors ${isActive("/about") ? "bg-red-50 text-[#DC3545]" : "text-gray-700 hover:bg-gray-50"}`}>
+              <Link href="/about" className={`flex items-center px-4 py-3 rounded-xl font-medium transition-colors ${isActive("/about") ? "bg-white/10 text-white" : "text-white/75 hover:bg-white/5 hover:text-white"}`}>
                 About
               </Link>
-              <Link href="/contact" className={`flex items-center px-4 py-3 rounded-xl font-medium transition-colors ${isActive("/contact") ? "bg-red-50 text-[#DC3545]" : "text-gray-700 hover:bg-gray-50"}`}>
+              <Link href="/contact" className={`flex items-center px-4 py-3 rounded-xl font-medium transition-colors ${isActive("/contact") ? "bg-white/10 text-white" : "text-white/75 hover:bg-white/5 hover:text-white"}`}>
                 Contact
               </Link>
             </nav>
 
-            <div className="p-5 border-t border-gray-100 space-y-3">
+            <div className="p-5 border-t border-white/10 space-y-3">
               <Link href="/contact" className="flex items-center justify-center w-full bg-[#DC3545] hover:bg-[#b02a37] text-white font-bold py-4 rounded-xl transition-colors">
                 Book a Free Estimate
               </Link>
-              <a href="mailto:northshorespotless@gmail.com" className="flex items-center justify-center w-full text-sm text-gray-500 hover:text-[#0A1628] transition-colors">
+              <a href="mailto:northshorespotless@gmail.com" className="flex items-center justify-center w-full text-sm text-white/50 hover:text-white transition-colors">
                 northshorespotless@gmail.com
               </a>
             </div>

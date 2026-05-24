@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 112" fill="none">
+  <!-- Water droplet shape -->
+  <path d="M50,4 C50,4 11,52 11,74 C11,97 28,109 50,109 C72,109 89,97 89,74 C89,52 50,4 50,4Z" fill="white"/>
+
+  <!-- Blue wave inside droplet -->
+  <path d="M26,84 C32,77 39,91 46,84 C53,77 60,91 67,84 C74,77 81,91 88,84"
+        stroke="#1B9BD1" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Red 4-pointed sparkle star (upper-right, partially overlapping droplet edge) -->
+  <path d="M71,31 L73.6,43 L85,45 L73.6,47 L71,59 L68.4,47 L57,45 L68.4,43Z" fill="#DC3545"/>
+
+  <!-- "NORTH SHORE" -->
+  <text x="110" y="40"
+        font-family="Inter, -apple-system, BlinkMacSystemFont, Arial, sans-serif"
+        font-size="14" font-weight="500" letter-spacing="5" fill="white">NORTH SHORE</text>
+
+  <!-- "SPOTLESS" + red period -->
+  <text x="108" y="83"
+        font-family="Inter, -apple-system, BlinkMacSystemFont, Arial, sans-serif"
+        font-size="44" font-weight="900" fill="white">SPOTLESS<tspan fill="#DC3545">.</tspan></text>
+
+  <!-- Tagline -->
+  <text x="110" y="103"
+        font-family="Inter, -apple-system, BlinkMacSystemFont, Arial, sans-serif"
+        font-size="9.5" font-weight="400" letter-spacing="3" fill="rgba(255,255,255,0.6)">THE STANDARD IS SPOTLESS.</text>
+</svg>
